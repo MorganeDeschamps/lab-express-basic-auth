@@ -1,18 +1,6 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
-<form id="auth-form" action='/auth/signup' method='POST'>
+<a href="/auth/signup"><button>SIGN UP</button></a>
 
-  <label for=''>Username</label>
-  <input type='text' name='username'>
-
-  <label for=''>Password</label>
-  <input type='password' name='password'>
-
-  <button type='submit'>Submit</button>
-</form>
-
-{{!-- Error message display --}}
-{{#if errorMessage}}
-<div class="error-message"> {{errorMessage}} </div>
-{{/if}}
+<a href="/auth/login"><button>LOG IN</button></a>
